@@ -702,13 +702,14 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="form-field-checkbox">
-            <input type="checkbox" name="user-policy" id="user-policy" />
-            <label for="user-policy" class="label-text-policy"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="label-text-policy-deal" href="#">Умови договору</a></label
-            >
-          </div>
+          <label class="form-field-checkbox">
+            <input type="checkbox" class="input-policy" name="user-policy" required />
+            <svg class="svg-checkbox">
+              <use class="svg-checkbox-icon" href="./images/sprite.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю&nbsp;
+            <a class="label-policy-deal" href="#">&nbsp;Умови договору</a></label
+          >
           <button class="btn-submit" type="submit">Відправити</button>
         </form>
       </div>
